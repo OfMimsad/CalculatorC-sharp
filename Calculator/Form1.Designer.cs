@@ -171,6 +171,7 @@
             this.btnP.TabIndex = 8;
             this.btnP.Text = "+";
             this.btnP.UseVisualStyleBackColor = false;
+            this.btnP.Click += new System.EventHandler(this.Operational_function);
             // 
             // btnM
             // 
@@ -184,6 +185,7 @@
             this.btnM.TabIndex = 12;
             this.btnM.Text = "-";
             this.btnM.UseVisualStyleBackColor = false;
+            this.btnM.Click += new System.EventHandler(this.Operational_function);
             // 
             // btn6
             // 
@@ -239,6 +241,7 @@
             this.BtnMU.TabIndex = 16;
             this.BtnMU.Text = "*";
             this.BtnMU.UseVisualStyleBackColor = false;
+            this.BtnMU.Click += new System.EventHandler(this.Operational_function);
             // 
             // btn3
             // 
@@ -294,6 +297,7 @@
             this.btnD.TabIndex = 20;
             this.btnD.Text = "/";
             this.btnD.UseVisualStyleBackColor = false;
+            this.btnD.Click += new System.EventHandler(this.Operational_function);
             // 
             // btnEQ
             // 
@@ -366,7 +370,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.Click += new System.EventHandler(this.NumericValue);
+            this.Click += new System.EventHandler(this.Operational_function);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -51,9 +51,26 @@ namespace Calculator
             txtDisplay.Text = "0";
         }
 
+        private void Operational_function(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+
+            firstNum = double.Parse(txtDisplay.Text);
+            operation = b.Text;
+            txtDisplay.Text = "";
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
+            txtDisplay.Text = "0";
 
+            string f, s;
+            f = Convert.ToString(firstNum);
+            s = Convert.ToString(secondNum);
+
+            f = "";
+            s = "";
+            
         }
     }
 }
