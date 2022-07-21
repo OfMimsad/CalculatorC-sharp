@@ -60,6 +60,52 @@ namespace Calculator
             txtDisplay.Text = "";
         }
 
+        private void btnBS_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text.Length > 0)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
+            } 
+            if (txtDisplay.Text == "")
+            {
+                txtDisplay.Text = "0";
+            }
+        }
+
+        private void btnPM_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text.Contains("-"))
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(0, 1);
+
+            } else
+            {
+                txtDisplay.Text = "-" + txtDisplay.Text;
+            }
+        }
+
+        private void btnEQ_Click(object sender, EventArgs e)
+        {
+            secondNum = double.Parse(txtDisplay.Text);
+            switch (operation)
+            {
+                case "+":
+                    txtDisplay.Text = Convert.ToString(firstNum + secondNum);
+                    break;
+                case "-":
+                    txtDisplay.Text = Convert.ToString(firstNum - secondNum);
+                    break;
+                case "*":
+                    txtDisplay.Text = Convert.ToString(firstNum * secondNum);
+                    break;
+                case "/":
+                    txtDisplay.Text = Convert.ToString(firstNum / secondNum);
+                    break;
+                default:
+                    break;
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = "0";

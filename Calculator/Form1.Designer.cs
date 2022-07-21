@@ -30,7 +30,7 @@
         {
             this.txtDisplay = new System.Windows.Forms.TextBox();
             this.btnBS = new System.Windows.Forms.Button();
-            this.btnCE = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
             this.btnPM = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
@@ -75,20 +75,21 @@
             this.btnBS.TabIndex = 1;
             this.btnBS.Text = "⌫";
             this.btnBS.UseVisualStyleBackColor = false;
+            this.btnBS.Click += new System.EventHandler(this.btnBS_Click);
             // 
-            // btnCE
+            // button2
             // 
-            this.btnCE.BackColor = System.Drawing.Color.AliceBlue;
-            this.btnCE.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnCE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCE.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnCE.Location = new System.Drawing.Point(100, 64);
-            this.btnCE.Name = "btnCE";
-            this.btnCE.Size = new System.Drawing.Size(83, 71);
-            this.btnCE.TabIndex = 2;
-            this.btnCE.Text = "CE";
-            this.btnCE.UseVisualStyleBackColor = false;
-            this.btnCE.Click += new System.EventHandler(this.button2_Click);
+            this.button2.BackColor = System.Drawing.Color.AliceBlue;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.button2.Location = new System.Drawing.Point(100, 64);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(83, 71);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "CE";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnC
             // 
@@ -116,6 +117,7 @@
             this.btnPM.TabIndex = 4;
             this.btnPM.Text = "±";
             this.btnPM.UseVisualStyleBackColor = false;
+            this.btnPM.Click += new System.EventHandler(this.btnPM_Click);
             // 
             // btn9
             // 
@@ -311,6 +313,7 @@
             this.btnEQ.TabIndex = 19;
             this.btnEQ.Text = "=";
             this.btnEQ.UseVisualStyleBackColor = false;
+            this.btnEQ.Click += new System.EventHandler(this.btnEQ_Click);
             // 
             // btnDot
             // 
@@ -364,7 +367,7 @@
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btnPM);
             this.Controls.Add(this.btnC);
-            this.Controls.Add(this.btnCE);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnBS);
             this.Controls.Add(this.txtDisplay);
             this.Name = "Form1";
@@ -380,7 +383,7 @@
 
         private System.Windows.Forms.TextBox txtDisplay;
         private System.Windows.Forms.Button btnBS;
-        private System.Windows.Forms.Button btnCE;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnPM;
         private System.Windows.Forms.Button btn9;
